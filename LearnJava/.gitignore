@@ -5,4 +5,7 @@
 .classpath
 .project
 
-
+#jar,zip,tar files
+*.jar
+*.zip
+*.tar

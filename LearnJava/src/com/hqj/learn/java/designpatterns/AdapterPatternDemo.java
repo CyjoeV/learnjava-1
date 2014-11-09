@@ -6,7 +6,7 @@ package com.hqj.learn.java.designpatterns;
 /**
  * @author hqj
  * Version : 1.0
- * Description : 该类使用于演示适配器设计模式。
+ * Description : 属于结构模式Structural Pattern。该类使用于演示适配器设计模式。
  * 该模式用于融合两个不相容的接口，从而使用两个接口提供的服务。
  * 举例来说：读卡器就连接笔记本与SD卡的一个适配器。
  */

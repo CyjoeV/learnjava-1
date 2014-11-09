@@ -6,7 +6,7 @@ package com.hqj.learn.java.designpatterns;
 /**
  * @author hqj
  * Version : 1.0
- * Description :用于演示Bridge Pattern。
+ * Description :属于结构模式Structural Pattern。用于演示Bridge Pattern。
  * 该模式用于分解抽象功能接口的实现与实际类的实现。 而两者之间的联系通过抽象的Bridge类来实现。
  * 比如可以通过传递实现功能接口的不同的类，来实现实际类的不同的行为表现。
  */
@@ -76,4 +76,3 @@ public class BridgePatternDemo {
 		}
 	}
 }
-

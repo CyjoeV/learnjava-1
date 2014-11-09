@@ -9,7 +9,8 @@ import java.util.List;
 /**
  * @author hqj
  * Version : 1.0
- * Description : 
+ * Description : 属于结构模式Structural Pattern。将实现一个复杂功能的类细分为小类（组件）。
+ * 然后通过Builder类将他们整合起来，实现复杂的功能。
  */
 public class BuilderPatternDemo {
 	/**
