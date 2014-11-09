@@ -61,25 +61,6 @@ public class PrototypePatternDemo {
 		}
 	}
 
-	class ShapeCache{
-		public static Hashtable<String,Shape> shapeMap  = new Hashtable<String,Shape>();
-		public static Shape getShape(String shapeId){
-			Shape cachedShape = shapeMap.get(shapeId);
-			return (Shape)cachedShape.clone();
-		}
-		/*
-		 * loadCache方法用于获取原始类。实际当中这些类的获取成本很高。
-		 * 很可能是需要大量的数据库操作等。
-		 * */
-		public static void loadCache(){
-			Circle circle = new Circle();
-			shapeMap.put("1", circle);
-			Rectangle rectangle = new Rectangle();
-			shapeMap.put("2", rectangle);
-			Triangle triangle = new Triangle();
-			shapeMap.put("3", triangle);
-		}
-	}
 
 	class Circle extends Shape{
 		public Circle(){
@@ -109,4 +90,23 @@ public class PrototypePatternDemo {
 	}
 }
 
-
+class ShapeCache{
+	public static Hashtable<String,PrototypePatternDemo.Shape> shapeMap  = new Hashtable<String,PrototypePatternDemo.Shape>();
+	public static PrototypePatternDemo.Shape getShape(String shapeId){
+		PrototypePatternDemo.Shape cachedShape = shapeMap.get(shapeId);
+		return (PrototypePatternDemo.Shape)cachedShape.clone();
+	}
+	/*
+	 * loadCache方法用于获取原始类。实际当中这些类的获取成本很高。
+	 * 很可能是需要大量的数据库操作等。
+	 * */
+	public static void loadCache(){
+		PrototypePatternDemo ppd = new PrototypePatternDemo();
+		PrototypePatternDemo.Circle circle = ppd.new Circle();
+		shapeMap.put("1", circle);
+		PrototypePatternDemo.Rectangle rectangle = ppd.new Rectangle();
+		shapeMap.put("2", rectangle);
+		PrototypePatternDemo.Triangle triangle = ppd.new Triangle();
+		shapeMap.put("3", triangle);
+	}
+}
