@@ -16,6 +16,11 @@ public class ProxyPatternDemo {
 	
 	public void Demo(){
 		RealImage realImage = new RealImage("c/hqj/image1.png");
+		//image will be loaded from disk
+		realImage.display();
+		System.out.println("");
+		//image will not be loaded from disk
+		//这是proxy模式的目的之一，创建开销比较大的对象，就尽量多重用，减少创建次数。
 		realImage.display();
 	}
 	
