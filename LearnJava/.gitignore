@@ -1,5 +1,6 @@
 #Folders 
 /bin/
+/.settings/
 
 #Eclipse config files
 .classpath
