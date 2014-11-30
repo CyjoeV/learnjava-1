@@ -3,9 +3,8 @@ package com.hqj.learn.java.designpatterns;
 import java.util.HashMap;
 
 /**
- * @author ${user}
- * ${tags}
- * Version :
+ * @author hu qijin
+ * Version : 1.0
  * Description : 结构模式。该模式用于降低系统中对象的数量，减少内存痕迹，提高性能。该模式的主要方式是维护一个类似对象的集合。
  * 如果请求的对象在集合中有的话，就将集合中的对象传给请求。该模式创建新对象时，只创建集合中没有的对象。
  */

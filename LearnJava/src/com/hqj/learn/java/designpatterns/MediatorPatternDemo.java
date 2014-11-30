@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.hqj.learn.java.designpatterns;
 
 import java.util.Date;
