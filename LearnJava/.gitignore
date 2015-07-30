@@ -5,6 +5,8 @@
 #Eclipse config files
 .classpath
 .project
+.prefs
+.sod
 
 #jar,zip,tar files
 *.jar
